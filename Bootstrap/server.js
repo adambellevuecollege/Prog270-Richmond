@@ -23,12 +23,12 @@ function first(request, response) {
         response.writeHead(200, {'Content-Type': 'text/css'});
         response.write(css);
         response.end();
-    } else if (path === '/About.html') {
+    } else if (path === '/about.html') {
         var aboutHtml = fs.readFileSync(__dirname + path);
         response.writeHead(200, {'Content-Type': 'text/html', 'Content-Length': '1877'});
         response.write(aboutHtml);
         response.end();
-    } else if (path === '/Contacts.html') {
+    } else if (path === '/contacts.html') {
         var contactsHtml = fs.readFileSync(__dirname + path);
         response.writeHead(200, {'Content-Type': 'text/html', 'Content-Length': '1968'});
         response.write(contactsHtml);
