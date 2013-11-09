@@ -28,7 +28,7 @@ function first(request, response) {
         response.writeHead(200, {'Content-Type': 'text/html', 'Content-Length': '1877'});
         response.write(aboutHtml);
         response.end();
-    } else if (path === '/contacts.html') {
+    } else if (path === '/contact.html') {
         var contactsHtml = fs.readFileSync(__dirname + path);
         response.writeHead(200, {'Content-Type': 'text/html', 'Content-Length': '1968'});
         response.write(contactsHtml);
